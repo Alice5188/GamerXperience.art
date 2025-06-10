@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Golf Club - Online Golf Game | GamerXperience.art</title>
+    <meta name="description" content="Play Mini Golf Club online for free! Experience realistic mini golf with challenging courses and smooth gameplay.">
+    <meta name="keywords" content="online golf club, Mini Golf Club, online game, game experience">
+    <link rel="canonical" href="https://gamerxperience.art">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .welcome-text {
+            font-size: 1.2rem;
+            font-weight: 500;
+            opacity: 0.9;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .game-intro {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .game-section {
+            padding: 30px;
+        }
+        
+        .game-frame {
+            width: 100%;
+            height: 600px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            background: #000;
+            margin-bottom: 30px;
+        }
+        
+        .game-frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .rating-section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            color: #1d1d1f;
+            margin-bottom: 20px;
+        }
+        
+        .stars {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .star {
+            font-size: 2rem;
+            color: #ddd;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .star:hover,
+        .star.active {
+            color: #007aff;
+            transform: scale(1.1);
+        }
+        
+        .rating-text {
+            font-size: 1.1rem;
+            color: #6e6e73;
+            margin-bottom: 15px;
+        }
+        
+        .submit-rating {
+            background: linear-gradient(45deg, #007aff, #5856d6);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-rating:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 122, 255, 0.3);
+        }
+        
+        .submit-rating:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .rating-result {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: 600;
+            display: none;
+        }
+        
+        .rating-result.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .welcome-text {
+                font-size: 1rem;
+                margin-bottom: 12px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .game-intro {
+                font-size: 1rem;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .game-section {
+                padding: 20px;
+            }
+            
+            .game-frame {
+                height: 400px;
+            }
+            
+            .stars {
+                gap: 8px;
+            }
+            
+            .star {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .game-frame {
+                height: 350px;
+            }
+            
+            .rating-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="welcome-text">Welcome to GamerXperience.art</div>
+            <h1>Mini Golf Club</h1>
+            <p class="game-intro">Experience realistic mini golf with challenging courses and precise controls. Master each shot and conquer every obstacle!</p>
+        </header>
+        
+        <main class="game-section">
+            <div class="game-frame">
+                <iframe src="https://www.crazygames.com/embed/mini-golf-club" 
+                        style="width: 100%; height: 100%;" 
+                        frameborder="0" 
+                        allow="gamepad *;"
+                        title="Mini Golf Club Online Game">
+                </iframe>
+            </div>
+            
+            <div class="rating-section">
+                <h2>Rate This Game</h2>
+                <p class="rating-text">How would you rate your Mini Golf Club experience?</p>
+                <div class="stars">
+                    <span class="star" data-rating="1">⭐</span>
+                    <span class="star" data-rating="2">⭐</span>
+                    <span class="star" data-rating="3">⭐</span>
+                    <span class="star" data-rating="4">⭐</span>
+                    <span class="star" data-rating="5">⭐</span>
+                </div>
+                <button class="submit-rating" id="submitBtn" disabled>Submit Rating</button>
+                <div class="rating-result" id="ratingResult"></div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        let selectedRating = 0;
+        const stars = document.querySelectorAll('.star');
+        const submitBtn = document.getElementById('submitBtn');
+        const ratingResult = document.getElementById('ratingResult');
+        
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                selectedRating = parseInt(this.dataset.rating);
+                updateStars();
+                submitBtn.disabled = false;
+            });
+            
+            star.addEventListener('mouseenter', function() {
+                const rating = parseInt(this.dataset.rating);
+                highlightStars(rating);
+            });
+        });
+        
+        document.querySelector('.stars').addEventListener('mouseleave', function() {
+            updateStars();
+        });
+        
+        function highlightStars(rating) {
+            stars.forEach((star, index) => {
+                if (index < rating) {
+                    star.classList.add('active');
+                } else {
+                    star.classList.remove('active');
+                }
+            });
+        }
+        
+        function updateStars() {
+            highlightStars(selectedRating);
+        }
+        
+        submitBtn.addEventListener('click', function() {
+            if (selectedRating > 0) {
+                const messages = {
+                    1: "Thanks for your feedback! We'll work to improve the game.",
+                    2: "Thank you! Your feedback helps us make better games.",
+                    3: "Thanks for rating! We appreciate your honest feedback.",
+                    4: "Great! Thanks for the positive rating!",
+                    5: "Awesome! Thank you for the 5-star rating! 🎉"
+                };
+                
+                ratingResult.textContent = messages[selectedRating];
+                ratingResult.className = 'rating-result success';
+                ratingResult.style.display = 'block';
+                
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Rating Submitted';
+                
+                // Reset after 3 seconds
+                setTimeout(() => {
+                    selectedRating = 0;
+                    updateStars();
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Submit Rating';
+                    ratingResult.style.display = 'none';
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>
